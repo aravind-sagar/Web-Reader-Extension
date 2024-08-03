@@ -1,0 +1,15 @@
+body {
+  background: #f4f4f4;
+  color: #333;
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+#reader-mode {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

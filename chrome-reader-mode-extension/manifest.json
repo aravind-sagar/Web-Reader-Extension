@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "iOS Style Reader Mode",
+  "version": "1.0",
+  "description": "A Chrome extension to enable iOS-style reader mode on any website.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/reader-16.png",
+      "48": "icons/reader-48.png",
+      "128": "icons/reader-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "css": ["src/reader.css"]
+    }
+  ]
+}
